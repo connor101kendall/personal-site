@@ -1,0 +1,24 @@
+.Footer{
+    background-color: #17181a;
+    color: #ffffff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+  }
+
+.Icon{
+  font-size: 1.8rem;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.Link{
+  color: white;
+}
+
+.Link:hover{
+  color: #873260;
+  transition-duration: 0.5s;
+}

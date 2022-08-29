@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.Header{
+    background-color: #17181a;
+    color: #ffffff;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 5rem;
+  }
+
+.Icon{
+  font-size: 1.8rem;
+  margin: 15px;
+ 
+}
+.Header ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.Header a{
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.Header a:hover{
+  transition-duration: 0.5s;
+}
+.Link:hover{
+  color: #873260;
+}
+
+.Header li.active{
+  background-color: #873260;
+}
+.Header li:hover{
+  transition-duration: 0.5s;
+  background-color: #C8A2C9;
+}
+
+

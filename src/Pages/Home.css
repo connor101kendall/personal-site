@@ -1,0 +1,40 @@
+body {
+    background-color: #1e1d1d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: calc(10px + 1.9vmin);
+    color: rgb(255, 255, 255);
+  }
+  
+  .Container{
+    text-align: left;
+    background-color: rgb(18, 17, 17);
+    border-radius: 5%;
+    height: auto;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding-top: 20px;
+  }
+  
+  .Image{
+    height: 50%;
+  }
+  
+  .Button{
+    text-align: center;
+    font-weight: 200;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 20px;
+    margin: 20px;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    background-color: #17181a;
+  }
+  .Button:hover{
+    background-color: #301934;
+  }
+  
+  

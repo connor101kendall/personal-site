@@ -1,0 +1,54 @@
+.Link{
+  text-decoration: none;
+}
+.sizer{
+  height: 75vh;
+}
+.preview{
+  width: 100%;
+  border-radius: 10px;
+}
+.box{
+    background-color: rgb(18, 17, 17);
+    border-radius: 5px;
+    width: 75%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  .box hr{
+    border: 2px solid #873260;
+    border-radius: 5px;
+  }
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.wrapper{
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  font-size: 1.6rem;
+  text-align: center;
+  border: 1px solid grey;
+  padding: 25px;
+  border-radius: 5px;
+  }
+  .description{
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    color: black;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease-in-out;
+    opacity: 0;
+  }
+  .description:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+  
