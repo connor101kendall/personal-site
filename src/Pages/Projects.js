@@ -16,7 +16,7 @@ export default function Projects() {
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <div className='sizer'><img className='preview' alt="ebLabs" src="img/eBLabs.png"></img></div>
+      <div className='sizer'><img className='preview' alt="ebLabs" src="img/ebLabs.png"></img></div>
       <div class="carousel-caption d-none d-md-block">
       <a href='https://eblabs.dev.e-butterfly.org/en' className='Link'><h2>eBLabs</h2></a>
         <h5>React.js, Bootstrap, FastAPI, HTML/CSS</h5>
