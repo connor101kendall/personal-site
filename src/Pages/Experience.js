@@ -43,11 +43,11 @@ export default function Experience() {
 
 const data = [
     {
-        title: 'Front-end Developer',
-        loc: 'WeAccelerate/eButterfly | Remote',
+        title: 'Project Team Member',
+        loc: 'WeAccelerate/Manulife/eButterfly | Remote',
         date: 'June 2022 - August 2022',
-        d1: 'Developed UI/UX using React.js on eBLabs project',
-        d2: 'Collaborated with a remote dev team using GitHub, Slack, and Asana',
+        d1: 'Received high-level training in modern web app development from Manulife Engineers',
+        d2: 'Developed UI/UX for eButterfly using React.js on the eBLabs project',
     },
     {
         title: 'Pump Operator',
