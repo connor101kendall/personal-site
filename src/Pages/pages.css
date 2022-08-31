@@ -28,19 +28,21 @@
   }
 
   .item{
-    margin-bottom: 5px;
-    padding: 10px 20px;
+    padding: 5px 20px;
   }
 
   .title{
-    color: darkgray;
     display: flex;
     align-items: center;
     cursor: pointer;
   }
+  .title:hover{
+    color: #873260;
+    transition-duration: 0.5s;
+  }
 
   .content{
-    color: #873260;
+    color: lightgray;
     max-height: 0;
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0,1,0,1);
@@ -50,4 +52,8 @@
     max-height: 9999px;
     transition: all 0.5s cubic-bezier(1,0,1,0);
   }
-  
+  .loc{
+    font-size: large;
+    font-style: italic;
+    color: #C8A2C9;
+  }
