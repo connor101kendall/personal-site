@@ -1,6 +1,6 @@
 
 .sizer{
-  height: 70vh;
+  height: 75vh;
 }
 .preview{
   width: 100%;
@@ -31,16 +31,17 @@
     padding: 5px 20px;
   }
 
+  .wrapper{
+    display: flex;
+    align-items: center;
+  }
   .title{
     display: flex;
     align-items: center;
     cursor: pointer;
+    justify-content: space-between;
   }
-  .title:hover{
-    color: #873260;
-    transition-duration: 0.5s;
-  }
-
+  
   .content{
     color: lightgray;
     max-height: 0;
@@ -56,4 +57,14 @@
     font-size: large;
     font-style: italic;
     color: #C8A2C9;
+  }
+  .Icon2{
+    padding: 0 20px;
+  }
+  .Icon2:hover{
+    color: #873260;
+    transition-duration: 0.5s;
+  }
+  .date{
+    justify-self: right;
   }
