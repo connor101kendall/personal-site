@@ -1,19 +1,13 @@
 import React from 'react';
-import { useState } from 'react';
+import useCollapse from 'react-collapsed';
 import './pages.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'
 
 export default function Experience() {
-    const [selected, setSelected] = useState(null)
+    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
-    const toggle = i => {
-        if (selected === i){
-            return setSelected(null)
-        }
-
-        setSelected(i)
-    }
+    
 
     
     return (
@@ -23,12 +17,14 @@ export default function Experience() {
             <div className='accordian'>
                 {data.map((item, i) => (
                     <div className='item'>
-                        <div className='title' onClick={() => toggle(i)}>
+                        <div className='title'>
                             <h2>{item.title}</h2>
-                            <span>{selected === i ? '-' : '+'}</span>
-                            <FontAwesomeIcon className="Icon" icon={selected === i ? 'faAngleDown' : 'faAngleUp'} />
+                            <button className="SeeMore" {...getToggleProps()}>
+                                {isExpanded ? 'Less Details' : 'More Details'}
+                            </button>
+                            {/* <FontAwesomeIcon className="Icon" icon={selected === i ? 'faAngleDown' : 'faAngleUp'} /> */}
                         </div>
-                        <div className={selected === i ? 'content show' : 'content'}>{item.description}</div>
+                        <div {...getCollapseProps()}>{item.description}</div>
                     </div>
                 ))}
             </div>
